@@ -24,7 +24,7 @@ deploy:
     bucket: harbor.liu-104corp-travis-source
     key: latest.zip
     application: harborliu
-    deployment_group: master
+    deployment_group: harbor.liu
     region: $DEFAULT_REGION
     on:
       branch: master
