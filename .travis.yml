@@ -1,16 +1,13 @@
 language: php
 php:
   - '7.0'
-
-script: echo "test ok"
-notifications: 
+script: echo "Test OK"
+notifications:
   email: false
-
 before_deploy:
   - zip -r latest.zip *
   - test -d deploy || mkdir deploy
   - mv latest.zip deploy/latest.zip
-
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
