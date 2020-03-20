@@ -23,7 +23,7 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: harbor.liu-104corp-travis-source
     key: latest.zip
-    application: harbor.liu
+    application: harborliu
     deployment_group: master
     region: $DEFAULT_REGION
     on:
